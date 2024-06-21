@@ -443,13 +443,33 @@ section {
 /* Mobile */
 @media (width <= 428px) {
 
-  /* Contato
+  /* Habilidades */
+  .tools {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem 1.5rem;
+  }
+
+  .tools_custom {
+    justify-content: center;
+    padding: 2.1rem 0;
+  }
+
+  /* Contato */
   .contact {
+    padding: 1.5rem;
+  }
+
+  .contact_form {
+    display: none;
+  }
+
+  .main__container {
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    padding: 3.5rem;
-  } */
+  }
 
   /* Rodape */
   .rodape {
