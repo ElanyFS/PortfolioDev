@@ -186,3 +186,12 @@
         font-size: 2.5rem;
     }
 }
+
+/* Desktop */
+@media (width >= 884px) {
+    /* Heaader */
+    .cabecalho_div_icon_redes_sociais {
+        gap: 4rem;
+        font-size: 2.5rem;
+    }
+}
