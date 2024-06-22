@@ -180,18 +180,38 @@
 
 /* Tablet */
 @media (width <= 884px) {
-    /* Heaader */
-    .cabecalho_div_icon_redes_sociais {
-        gap: 4rem;
-        font-size: 2.5rem;
-    }
+  /* Heaader */
+  .cabecalho_div_icon_redes_sociais {
+    gap: 4rem;
+    font-size: 2.5rem;
+  }
+
+  /* Sections */
+  section {
+    padding: 1.8rem;
+  }
+
+  /* Sobre mim */
+  .about {
+    gap: 1rem;
+  }
+
+  .about_image {
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+  }
+
+  .about_image > img {
+    width: 100%;
+  }
 }
 
 /* Desktop */
 @media (width >= 884px) {
-    /* Heaader */
-    .cabecalho_div_icon_redes_sociais {
-        gap: 4rem;
-        font-size: 2.5rem;
-    }
+  /* Heaader */
+  .cabecalho_div_icon_redes_sociais {
+    gap: 4rem;
+    font-size: 2.5rem;
+  }
 }
