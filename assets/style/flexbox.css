@@ -99,7 +99,7 @@
 
   .projetc_buttons {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     gap: 0.5rem;
     flex-wrap: wrap;
   }
