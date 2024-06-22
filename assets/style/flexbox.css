@@ -1,0 +1,220 @@
+.cabecalho_titles {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.cabecalho_titles > h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 5rem;
+  font-weight: 800;
+  color: transparent;
+  -webkit-text-stroke: 1px #ffffffe8;
+  background: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 1;
+  text-align: center;
+}
+
+.cabecalho_title_h3 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 2.2rem;
+  font-weight: 200;
+}
+
+.cabecalho_title_p {
+  font-family: "Source Code Pro", monospace;
+  font-size: 3rem;
+  font-weight: 500;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  text-align: center;
+}
+
+.cabecalho_div_icon_redes_sociais {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.linkMain {
+  z-index: 1;
+}
+
+/* Responsividade */
+
+/* Mobile */
+@media (max-width: 321px) {
+  /* Header */
+
+  .cabecalho_home {
+    padding: 2.5rem;
+  }
+
+  .cabecalho_titles > h1 {
+    font-size: 4rem !important;
+    font-weight: 400 !important;
+  }
+
+  .cabecalho_title_p {
+    padding: 0 1rem;
+  }
+
+  #services {
+    width: 90%;
+    padding: 0 0.1rem;
+    margin: 0 auto;
+  }
+
+  .service_list_cards {
+    display: flex;
+    justify-content: center; /* Centralizando os cards */
+    gap: 1rem; /* Espaçamento entre os cards */
+    flex-wrap: wrap; /* Permitindo que os cards quebrem linha conforme necessário */
+  }
+}
+
+@media (width <= 428px) {
+  /* Header */
+  .cabecalho_titles h3 {
+    font-size: 2rem;
+    margin: 0 1rem;
+  }
+
+  .cabecalho_titles h1 {
+    font-size: 4.3rem;
+    margin: 0 2rem;
+    line-height: 5rem;
+  }
+
+  .cabecalho_titles p {
+    font-size: 1.7rem;
+    margin: 0 2rem;
+  }
+
+  /* Sobre mim */
+  .about {
+    padding: 1.5rem;
+  }
+
+  .section_about {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .about_image img {
+    width: 99%;
+  }
+
+  .about_texts {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .btn_down_cv {
+    width: 50%;
+  }
+
+  /* Servicos */
+  #services {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1.5rem 1.5rem;
+  }
+
+  .service_list_cards {
+    justify-content: center;
+  }
+
+  .service_card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    flex: 1;
+    min-width: 300px;
+    padding: 1rem;
+    box-shadow: 1px 1px 1px 1px rgb(39, 39, 39);
+    border-radius: 15px;
+    background-color: #222222;
+  }
+
+  /* Projetos */
+  .projects {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+    gap: 1rem;
+  }
+
+  .projetc_buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+  }
+
+  /* Habilidades */
+  .tools {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem 1.5rem;
+  }
+
+  .tools_custom {
+    justify-content: center;
+    padding: 2.1rem 0;
+  }
+
+  /* Contato */
+  .contact {
+    padding: 1.5rem;
+  }
+
+  .contact_form {
+    display: none;
+  }
+
+  .main__container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  /* Rodape */
+  .rodape {
+    padding: 0.5rem 1.5rem;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .rodape__info__redes_sociais {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .rodape__info__redes_sociais ul {
+    justify-content: space-between;
+    gap: 2rem;
+  }
+
+  .rodape__direitos::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #fff;
+    margin: 0.5rem 0;
+  }
+}
