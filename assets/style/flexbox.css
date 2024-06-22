@@ -12,7 +12,7 @@
   /* Header */
 
   .cabecalho_home {
-    padding: 2.5rem;
+    padding: 7rem;
   }
 
   .cabecalho_titles > h1 {
@@ -36,12 +36,20 @@
 
   /* Contato */
   .contact_texts p {
-    font-size: 0.8rem ;
+    font-size: 0.8rem !important;
   }
 }
 
 @media (width <= 428px) {
   /* Header */
+  .cabecalho_home{
+    gap: 0.5rem !important;
+  }
+
+  .cabecalho_titles {
+    gap: 0.01rem;
+  }
+
   .cabecalho_titles h3 {
     font-size: 2rem;
     margin: 0 1rem;
@@ -174,8 +182,8 @@
 @media (width <= 884px) {
   /* Heaader */
   .cabecalho_div_icon_redes_sociais {
-    gap: 4rem;
-    font-size: 2.5rem;
+    gap: 3rem;
+    font-size: 2.1rem;
   }
 
   /* Sections */
