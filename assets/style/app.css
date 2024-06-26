@@ -44,7 +44,8 @@ header {
 .cabecalho_home {
   display: flex;
   flex-direction: column;
-  background-color: rgb(29, 28, 28);
+  /* background-color: rgb(29, 28, 28); */
+  background-color: rgb(20, 20, 20);
   align-items: center;
   justify-content: center;
   gap: 2.7rem;
@@ -120,7 +121,7 @@ main {
 section {
   /* min-height: 80vh; */
   height: auto;
-  padding: 1.8rem 3.6rem;
+  padding: 1.9rem 3.6rem;
 }
 
 /* About */
@@ -129,14 +130,15 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
-  gap: 2rem;
+  justify-content: center;
+  gap: 2.4rem;
+  /* height: 80vh; */
 }
 
 .section_about {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
   gap: 2rem;
 }
 
@@ -154,6 +156,9 @@ section {
 .about_texts {
   flex: 1;
   margin: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 .btn_down_cv {
@@ -162,6 +167,7 @@ section {
   border-radius: 10px;
   padding: 0.5rem 2rem;
   color: #fff;
+  width: 50%;
 }
 
 /* Serviços */
@@ -169,14 +175,16 @@ section {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  /* padding: 1.5rem 3rem; */
+  background-color: rgb(20, 20, 20);
+  min-height: 60vh;
 }
 
 .title_h3 {
   font-family: "Roboto";
   font-size: 2.4rem;
   text-align: center;
-  font-weight: 300;
+  font-weight: 200;
+  margin-bottom: 1rem;
 }
 
 .service_list_cards {
@@ -204,7 +212,6 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* padding: 1.5rem 3rem; */
   gap: 1rem;
 }
 
@@ -290,17 +297,18 @@ section {
   align-items: center;
   gap: 3rem;
   padding: 1.5rem 3rem;
+  background-color: rgb(20, 20, 20);
 }
 
 .tools_custom {
-  position: relative;
+  /* position: relative; */
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
   gap: 100px 50px;
   height: auto !important;
-  min-height: 100vh;
+  /* min-height: 100vh; */
 }
 
 .tools__custom__card {
@@ -468,3 +476,55 @@ section {
 .rodape__direitos p {
   padding: 0.5rem 0;
 }
+
+
+/* Animações */
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+.fade-in {
+  opacity: 0;
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+.fade-in.show {
+  animation: fadeIn 1s forwards;
+}
+
+.title_h3.show {
+  animation-delay: 0s; /* Título sem atraso */
+}
+
+.section_about.show,
+.service_list_cards.show,
+.content_projects.show,
+.tools_custom.show,
+.contact__info__form.show
+{
+  animation-delay: 0.5s; /* Atraso de meio segundo */
+}
+
+.hidden{
+  opacity: 0;
+  transform: translateX(-100%);
+  filter: blur(15px);
+  transition: all 2s;
+}
+
+.noHidden {
+  opacity: 1;
+  transform: translateX(0);
+  filter: blur(0);
+  transition: all 2s;
+}
+
+

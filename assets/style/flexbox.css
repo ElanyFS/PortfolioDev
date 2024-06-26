@@ -143,12 +143,14 @@
     font-size: 0.9rem;
   }
 
+
   /* Rodape */
   .rodape {
     padding: 0.5rem 1.5rem;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    gap: 1rem !important;
   }
 
   .rodape__info__redes_sociais {
@@ -169,6 +171,7 @@
     background-color: #fff;
     margin: 0.5rem 0;
   }
+
 }
 
 /* Tablet */
@@ -222,8 +225,14 @@
     gap: 5rem;
   }
 
+  .rodape__info__redes_sociais p {
+    white-space: nowrap;
+  }
+
   .rodape__info__redes_sociais {
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 }
 
@@ -232,6 +241,6 @@
   /* Heaader */
   .cabecalho_div_icon_redes_sociais {
     gap: 4rem;
-    font-size: 2.5rem;
+    font-size: 1.8rem;
   }
 }
