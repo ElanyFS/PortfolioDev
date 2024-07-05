@@ -23,6 +23,11 @@ body::-webkit-scrollbar {
   background: transparent; /* Optional: just to show it's hidden */
 }
 
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
 header {
   position: relative;
   z-index: 1;
@@ -272,7 +277,7 @@ section {
   margin-bottom: 0.5rem;
 }
 
-.project_tecnologias img{
+.project_tecnologias img {
   width: 10%;
 }
 
@@ -477,17 +482,16 @@ section {
   padding: 0.5rem 0;
 }
 
-
 /* Animações */
 
 @keyframes fadeIn {
   from {
-      opacity: 0;
-      transform: translateY(20px);
+    opacity: 0;
+    transform: translateY(20px);
   }
   to {
-      opacity: 1;
-      transform: translateY(0);
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
@@ -508,12 +512,11 @@ section {
 .service_list_cards.show,
 .content_projects.show,
 .tools_custom.show,
-.contact__info__form.show
-{
+.contact__info__form.show {
   animation-delay: 0.5s; /* Atraso de meio segundo */
 }
 
-.hidden{
+.hidden {
   opacity: 0;
   transform: translateX(-100%);
   filter: blur(15px);
@@ -527,4 +530,46 @@ section {
   transition: all 2s;
 }
 
+@keyframes animacaoLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
 
+.heyleft {
+  opacity: 0;
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+.heyleft.a-bomb {
+  animation: animacaoLeft 1s forwards;
+}
+
+@keyframes animacaoRight {
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.heyright {
+  opacity: 0;
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+.heyright.a-bomb {
+  animation: animacaoRight 1s forwards;
+}
+
+.paragrafo_animated {
+  color: #0042CB;
+}
