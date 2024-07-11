@@ -106,8 +106,10 @@ header {
   cursor: pointer;
 }
 
-.cabecalho_div_icon_redes_sociais p a i:hover {
-  filter: drop-shadow(0 0 10px rgb(30, 30, 92));
+.cabecalho_div_icon_redes_sociais p a i:hover,
+.linkMain i:hover,
+.rodape__info__redes_sociais ul li a i:hover {
+  filter: drop-shadow(0 0 10px #0044cb70); 
   color: rgb(230, 230, 250);
 }
 
