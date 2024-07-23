@@ -175,6 +175,11 @@ section {
   padding: 0.5rem 2rem;
   color: #fff;
   width: 50%;
+  cursor: pointer;
+}
+
+.btn_down_cv:hover {
+  transform: scale(1.05);
 }
 
 /* Serviços */
@@ -297,6 +302,18 @@ section {
   color: rgb(230, 230, 250);
 }
 
+#unique_btn{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.spanObs {
+  color: red;
+  font-size: 14px;
+}
+
 /* tools */
 .tools {
   display: flex;
@@ -322,18 +339,19 @@ section {
   position: relative;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  /* align-items: stretch; */
+  align-content: space-between;
   width: 270px;
   max-width: 100%;
   height: 300px;
-  background-color: #fff;
+  background-color: hsl(0, 0%, 100%);
   border-radius: 20px;
   transition: 0.5s;
   box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
 }
 
 .tools__custom__card:hover {
-  height: 400px;
+  height: 270px;
 }
 
 .card_img_box {
@@ -369,7 +387,7 @@ section {
 
 .tools_custom_content {
   position: absolute;
-  top: 252px;
+  top: 245px;
   width: 100%;
   height: 35px;
   padding: 0 30px;

@@ -143,7 +143,6 @@
     font-size: 0.9rem;
   }
 
-
   /* Rodape */
   .rodape {
     padding: 0.5rem 1.5rem;
@@ -171,7 +170,6 @@
     background-color: #fff;
     margin: 0.5rem 0;
   }
-
 }
 
 /* Tablet */
@@ -180,6 +178,16 @@
   .section_about {
     flex-direction: column;
   }
+
+  .tools__custom__card {
+    width: 240px;
+    height: 280px;
+  }
+
+.contact_form img {
+  width: 100%;
+  border-radius: 50%;
+}
 }
 
 @media (width <= 884px) {
@@ -242,5 +250,9 @@
   .cabecalho_div_icon_redes_sociais {
     gap: 4rem;
     font-size: 1.8rem;
+  }
+
+  .about_image > img {
+    width: 80%;
   }
 }

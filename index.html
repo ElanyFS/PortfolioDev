@@ -31,7 +31,11 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
 
-    <link rel="stylesheet" type="text/css" href="yourpath/all-animation.min.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="yourpath/all-animation.min.css"
+    />
 
     <script src="assets/js/script.js" defer></script>
   </head>
@@ -77,11 +81,7 @@
 
         <div class="section_about">
           <div class="about_image heyleft">
-            <img
-              src="assets/img/imgelany.jpg"
-              alt=""
-              srcset=""
-            />
+            <img src="assets/img/imgelany.jpg" alt="" srcset="" />
           </div>
           <div class="about_texts heyright">
             <h2>Elany Ferreira de Souza</h2>
@@ -99,8 +99,16 @@
             </p>
 
             <button class="btn_down_cv">
-              <i class="fa-solid fa-file-arrow-down" style="color: #ffffff"></i>
-              CV
+              <a
+                href="assets/arq/Elany Ferreira de souzaCurriculo.pdf"
+                target="_blank"
+              >
+                <i
+                  class="fa-solid fa-file-arrow-down"
+                  style="color: #ffffff"
+                ></i>
+                CV
+              </a>
             </button>
           </div>
         </div>
@@ -138,7 +146,6 @@
         <h3 class="title_h3 fade-in">Projetos</h3>
 
         <div class="content_projects">
-
           <div class="project_div heyleft">
             <img src="assets/img/landign-page.png" alt="" srcset="" />
             <div class="project_div_titles">
@@ -155,11 +162,18 @@
                 <img src="assets/img/js.svg" alt="" srcset="" />
               </div>
 
-              <div class="projetc_buttons">
-                <button class="btn_acessar_projeto">Acessar</button>
+              <div class="projetc_buttons" id="unique_btn">
                 <button class="btn_acessar_projeto">
-                  <a href="https://github.com/ElanyFS/landing-page">Código</a>
+                  <a
+                    href="https://github.com/ElanyFS/landing-page"
+                    target="_blank"
+                    >Código</a
+                  >
                 </button>
+
+                <span class="spanObs"
+                  >Obs: Projeto disponível apenas no Github</span
+                >
               </div>
             </div>
           </div>
@@ -179,11 +193,17 @@
                 <img src="assets/img/js.svg" alt="" srcset="" />
               </div>
 
-              <div class="projetc_buttons">
-                <button class="btn_acessar_projeto">Acessar</button>
+              <div class="projetc_buttons" id="unique_btn">
                 <button class="btn_acessar_projeto">
-                  <a href="https://github.com/ElanyFS/-focus---task-list">Código</a>
+                  <a
+                    href="https://github.com/ElanyFS/-focus---task-list"
+                    target="_blank"
+                    >Código</a
+                  >
                 </button>
+                <span class="spanObs"
+                  >Obs: Projeto disponível apenas no Github</span
+                >
               </div>
             </div>
           </div>
@@ -193,8 +213,9 @@
             <div class="project_div_titles">
               <h5 class="title_h5">Popular Movies - #7DaysOfCode</h5>
               <p>
-                Desenvolvido durante o desafio #7DaysOfCode, este projeto tem como objetivo consumir a 
-                API The Movie Database utilizando apenas JavaScript puro. 
+                Desenvolvido durante o desafio #7DaysOfCode, este projeto tem
+                como objetivo consumir a API The Movie Database utilizando
+                apenas JavaScript puro.
               </p>
 
               <div class="project_tecnologias">
@@ -205,7 +226,7 @@
 
               <div class="projetc_buttons">
                 <button class="btn_acessar_projeto">
-                  <a href="https://popular-movies-tau.vercel.app/">Acessar</a>
+                  <a href="https://popular-movies-tau.vercel.app/" target="_blank">Acessar</a>
                 </button>
                 <button class="btn_acessar_projeto">
                   <a
@@ -223,8 +244,9 @@
             <div class="project_div_titles">
               <h5 class="title_h5">Coin Craft - Inova Maranhão</h5>
               <p>
-                Projeto do programa Inova Maranhão para criar um jogo de educação financeira
-                 e uma Landing Page para cadastrar novos jogadores.
+                Projeto do programa Inova Maranhão para criar um jogo de
+                educação financeira e uma Landing Page para cadastrar novos
+                jogadores.
               </p>
 
               <div class="project_tecnologias">
@@ -232,15 +254,16 @@
                 <img src="assets/img/css-3svg.svg" alt="" srcset="" />
                 <img src="assets/img/js.svg" alt="" srcset="" />
                 <img src="assets/img/react.svg" alt="" srcset="" />
+                <img src="assets/img/tailwind.svg" alt="" srcset="" />
               </div>
 
               <div class="projetc_buttons">
                 <button class="btn_acessar_projeto">
-                  <a href="https://popular-movies-tau.vercel.app/">Acessar</a>
+                  <a href="https://coincraft-trilhas.vercel.app/" target="_blank">Acessar</a>
                 </button>
                 <button class="btn_acessar_projeto">
                   <a
-                    href="https://github.com/ElanyFS/popularMovies-7daysOfCode"
+                    href="https://github.com/KelvynReis/coincraft-trilhas"
                     target="_blank"
                     >Código</a
                   >
@@ -248,7 +271,6 @@
               </div>
             </div>
           </div>
-
         </div>
       </section>
 
@@ -264,9 +286,7 @@
             <div class="tools_custom_content">
               <h2>HTML5</h2>
               <p>
-                HTML é a linguagem de marcação padrão para criar páginas web.
-                Estrutura o conteúdo e elementos de uma página, sendo
-                fundamental para o desenvolvimento web.
+                Estruturação de páginas web com semântica e acessibilidade.
               </p>
               <a
                 href="https://developer.mozilla.org/pt-BR/docs/Web/HTML"
@@ -284,9 +304,7 @@
             <div class="tools_custom_content">
               <h2>CSS3</h2>
               <p>
-                CSS é uma linguagem de estilo usada para descrever a
-                apresentação de páginas web. Permite a criação de designs
-                visualmente atraentes e layouts responsivos.
+                Estilização de interfaces responsivas e design moderno.
               </p>
               <a
                 href="https://developer.mozilla.org/pt-BR/docs/Web/CSS"
@@ -302,14 +320,30 @@
             </div>
 
             <div class="tools_custom_content">
-              <h2>JAVASCRIPT</h2>
+              <h2>JavaScript</h2>
               <p>
-                JavaScript é uma linguagem de programação essencial para
-                desenvolvimento web. Usada tanto no front-end quanto no
-                back-end, permite criar páginas dinâmicas e interativas.
+                Interatividade e funcionalidades dinâmicas para páginas web.
               </p>
               <a
                 href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript"
+                target="_blank"
+                >Leia mais</a
+              >
+            </div>
+          </div>
+
+          <div class="tools__custom__card">
+            <div class="card_img_box">
+              <img src="assets/img/typescript.svg" alt="" srcset="" />
+            </div>
+
+            <div class="tools_custom_content">
+              <h2>TypeScript</h2>
+              <p>
+                Desenvolvimento de aplicações escaláveis e manutenção facilitada.
+              </p>
+              <a
+                href="https://www.typescriptlang.org/"
                 target="_blank"
                 >Leia mais</a
               >
@@ -324,9 +358,7 @@
             <div class="tools_custom_content">
               <h2>PHP</h2>
               <p>
-                PHP é uma linguagem de script server-side amplamente utilizada
-                para desenvolvimento web. É conhecida por sua flexibilidade e
-                eficiência na criação de páginas dinâmicas e aplicativos web.
+                Desenvolvimento de aplicações web dinâmicas e interativas.
               </p>
               <a
                 href="https://www.php.net/manual/pt_BR/index.php"
@@ -344,9 +376,7 @@
             <div class="tools_custom_content">
               <h2>LARAVEL</h2>
               <p>
-                Laravel é um framework PHP popular para desenvolvimento web,
-                conhecido por sua sintaxe elegante e poderosas funcionalidades.
-                Ideal para criar aplicações web robustas e escaláveis.
+                Desenvolvimento de aplicações web robustas usando o framework PHP.
               </p>
               <a href="https://laravel.com/" target="_blank">Leia mais</a>
             </div>
@@ -360,9 +390,7 @@
             <div class="tools_custom_content">
               <h2>BOOTSTRAP</h2>
               <p>
-                Bootstrap é um framework CSS popular para desenvolvimento web
-                responsivo. Oferece uma ampla gama de componentes prontos e um
-                sistema de grid flexível.
+                Desenvolvimento de interfaces responsivas e amigáveis.
               </p>
               <a
                 href="https://getbootstrap.com/docs/4.1/getting-started/introduction/"
@@ -374,15 +402,27 @@
 
           <div class="tools__custom__card">
             <div class="card_img_box">
+              <img src="assets/img/tailwind.svg" alt="" srcset="" />
+            </div>
+
+            <div class="tools_custom_content">
+              <h2>Tailwind</h2>
+              <p>
+                Interfaces personalizadas com uma abordagem utilitária.
+              </p>
+              <a href="https://tailwindcss.com/" target="_blank">Leia mais</a>
+            </div>
+          </div>
+
+          <div class="tools__custom__card">
+            <div class="card_img_box">
               <img src="assets/img/git.svg" alt="" srcset="" />
             </div>
 
             <div class="tools_custom_content">
-              <h2>GIT</h2>
+              <h2>Git/GitHub</h2>
               <p>
-                Git é um sistema de controle de versão distribuído usado para
-                rastrear alterações no código-fonte. Facilita a colaboração e o
-                gerenciamento eficiente de projetos.
+                Controle de versão e colaboração em projetos de software.
               </p>
               <a href="https://git-scm.com/docs/git/pt_BR" target="_blank"
                 >Leia mais</a
@@ -398,15 +438,13 @@
             <div class="tools_custom_content">
               <h2>MySQL</h2>
               <p>
-                MySQL é um sistema de gerenciamento de banco de dados relacional
-                amplamente utilizado. Conhecido por sua velocidade,
-                confiabilidade e facilidade de uso.
+                Gerenciamento de bancos de dados relacionais.
               </p>
               <a href="https://dev.mysql.com/doc/" target="_blank">Leia mais</a>
             </div>
           </div>
 
-          <!-- <div class="tools__custom__card">
+          <div class="tools__custom__card">
             <div class="card_img_box">
               <img src="assets/img/react.svg" alt="" srcset="" />
             </div>
@@ -414,13 +452,11 @@
             <div class="tools_custom_content">
               <h2>React</h2>
               <p>
-                React é uma biblioteca JavaScript para construir interfaces de
-                usuário. Permite a criação de componentes reutilizáveis e
-                oferece alta performance e flexibilidade.
+                Criação de interfaces de usuário modernas e reativas.
               </p>
               <a href="https://react.dev/" target="_blank">Leia mais</a>
             </div>
-          </div> -->
+          </div>
         </div>
       </section>
 
@@ -455,7 +491,13 @@
 
               <div class="contact_texts">
                 <h4>Telefone</h4>
-                <p><a href="https://wa.me/5599984925634?text=Olá%20gostaria%20de%20mais%20informações." target="_blank">(+55) 99 98492-5634</a></p>
+                <p>
+                  <a
+                    href="https://wa.me/5599984925634?text=Olá%20gostaria%20de%20mais%20informações."
+                    target="_blank"
+                    >(+55) 99 98492-5634</a
+                  >
+                </p>
               </div>
             </div>
 
@@ -466,7 +508,11 @@
 
               <div class="contact_texts">
                 <h4>E-mail</h4>
-                <p><a href="mailto:ellanysouza08@gmail.com" target="_blank">ellanysouza08@gmail.com</a></p>
+                <p>
+                  <a href="mailto:ellanysouza08@gmail.com" target="_blank"
+                    >ellanysouza08@gmail.com</a
+                  >
+                </p>
               </div>
             </div>
 
@@ -477,7 +523,9 @@
 
               <div class="contact_texts">
                 <h4>Instagram</h4>
-                <p><a href="https://www.instagram.com/e.bsouzaa/">@e.bsouzaa</a></p>
+                <p>
+                  <a href="https://www.instagram.com/e.bsouzaa/">@e.bsouzaa</a>
+                </p>
               </div>
             </div>
 
@@ -488,17 +536,18 @@
 
               <div class="contact_texts">
                 <h4>LinkedIn</h4>
-                <p><a href="https://www.linkedin.com/in/elany-de-souza-77b2b3140/">elany-de-souza-77b2b3140</a></p>
+                <p>
+                  <a
+                    href="https://www.linkedin.com/in/elany-de-souza-77b2b3140/"
+                    >elany-de-souza-77b2b3140</a
+                  >
+                </p>
               </div>
             </div>
           </div>
 
           <div class="contact_form heyright">
-            <img
-              src="assets/img/imgelany.jpg"
-              alt=""
-              srcset=""
-            />
+            <img src="assets/img/imgelany.jpg" alt="" srcset="" />
           </div>
         </div>
       </section>
